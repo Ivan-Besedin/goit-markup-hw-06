@@ -292,7 +292,6 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -359,6 +358,8 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding: 40px 40px;
 }
 
 .button-modal {
@@ -371,7 +372,137 @@ a {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  fill: #000000;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .button-modal svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.button-modal:hover {
+  fill: #2196f3;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal-form {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.modal-form input:not([type='checkbox']),
+.modal-form textarea {
+  margin-top: 4px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.modal-form label {
+  margin-bottom: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.label-checkbox {
+  display: flex;
+}
+
+.label-checkbox span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.lable-linc {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.form-btn {
+  align-self: center;
+
+  background: #188ce8;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 55px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.input-wrapper svg {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-lable:focus-within {
+  fill: #2196f3;
+  border-color: #2196f3;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-lable:focus-within input {
+  border: 1px solid #2196f3;
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* =========== / МОДАЛКА /============== */
@@ -770,6 +901,62 @@ footer .container {
 .references a:hover,
 .references a:focus {
   background-color: #2196f3;
+}
+
+.box-right-mailing {
+  margin-left: 93px;
+  width: 570px;
+}
+
+.mailing-text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.mailing {
+  display: flex;
+}
+
+.mailing input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+
+.mailing input::placeholder {
+  padding-left: 16px;
+}
+
+.mailing button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 29px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ====================== / FOOTER /============================== */
