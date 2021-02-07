@@ -536,12 +536,13 @@ a {
   transform: translateY(-50%);
 }
 
-.form-label:focus-within {
+.form-label:focus-within svg {
   fill: #2196f3;
 }
 
-.form-label:focus-within .form-input,
-.form-label:focus-within .form-textarea {
+.form-input:focus-within,
+.form-textarea:focus-within {
+  outline: 0;
   border: 1px solid #2196f3;
 }
 

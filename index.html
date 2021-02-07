@@ -8,8 +8,6 @@
     integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
     crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -58,7 +56,8 @@
                 </div>
             </div>
             <!-- МОДАЛЬНОЕ ОКНО -->
-            <div class="backdrop is-hidden" data-modal>  
+            <!-- is-hidden -->
+            <div class="backdrop" data-modal>  
                 <div class="modal">
                     <button type="button" class="button-modal" data-modal-close>
                         <svg class="close" width="18" height="18">
@@ -100,7 +99,11 @@
                         </label>
                         <label class="form-label-checkbox">
                             <input type="checkbox" name="contract" class="checkbox invisible-text" required>
-                            <span class="icon-checkbox"></span>
+                            <span class="icon-checkbox">
+                                <!-- <svg class="close" width="" height="">
+                                    <use href="./img/icon/sprait-icon.svg#check"></use>
+                                </svg> -->
+                            </span>
                             Соглашаюсь с рассылкой и принимаю<a href="#" class="lable-linc">Условия договора</a>
                         </label>
 
