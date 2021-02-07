@@ -59,11 +59,11 @@
             </div>
             <!-- МОДАЛЬНОЕ ОКНО -->
             <!--  is-hidden -->
-            <div class="backdrop" data-modal>  
+            <div class="backdrop is-hidde" data-modal>  
                 <div class="modal">
                     <button type="button" class="button-modal" data-modal-close>
                         <svg class="close" width="18" height="18">
-                            <use href="./img/icon/symbol-defs.svg#close-modal"></use>
+                            <use href="./img/icon/sprait-icon.svg#close-modal"></use>
                         </svg>
                     </button>
                     <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
@@ -73,7 +73,7 @@
                             <span class="input-wrapper">           
                                 <input type="text" name="name"/>
                                 <svg class="close" width="18" height="18">
-                                    <use href="./img/icon/symbol-defs.svg#person-modal"></use>
+                                    <use href="./img/icon/sprait-icon.svg#person-modal"></use>
                                 </svg>
                             </span>
                         </label>
@@ -82,7 +82,7 @@
                             <span class="input-wrapper">
                                 <input type="tel" name="tel" />
                                 <svg class="close" width="18" height="18">
-                                    <use href="./img/icon/symbol-defs.svg#phone-modal"></use>
+                                    <use href="./img/icon/sprait-icon.svg#phone-modal"></use>
                                 </svg>
                             </span> 
                         </label>
@@ -91,19 +91,18 @@
                             <span class="input-wrapper">
                                 <input type="email" name="mail" />
                                 <svg class="close" width="18" height="18">
-                                    <use href="./img/icon/symbol-defs.svg#emai-modal"></use>
+                                    <use href="./img/icon/sprait-icon.svg#emai-modal"></use>
                                 </svg>
                             </span>
                         </label>
                         <label>
                             Комментарий
-                            <textarea name="coment" placeholder="Введите текст">
-                            </textarea>
+                            <textarea name="coment" placeholder="Ввидите текст"></textarea>
                         </label>
                         <label class="label-checkbox">
                             <input type="checkbox" name="contract" required>
                             <span>
-                                Соглашаюсь с рассылкой и принимаю <a href="#" class="lable-linc">Условия договора</a>
+                                Соглашаюсь с рассылкой и принимаю <a href="#" class="lable-linc"> Условия договора</a>
                             </span>
                         </label>
                         <button type="submit" class="form-btn">Отправить</button>
@@ -450,7 +449,7 @@
                     <input type="email" name="mail" placeholder="E-mail">
                     <button type="submit">
                         Подписаться
-                        <svg class="" width="18" height="18">
+                        <svg class="" width="24" height="24">
                             <use href="./img/icon/sprait-icon.svg#icon-mailing"></use>
                         </svg>
                     </button>
@@ -461,19 +460,8 @@
     <!-- /подвал сайта -->
     <!-- подключение мадалки -->
     <script src="./js/modal.js"></script>
-    <script>
-        (()=> {
-            document
-            .querySelector('.js-speaker-form')
-            .addEventListener('submit', e => {
-                e.preventDefault();
-
-                new FormData(e.currentTarget). forEach((value, name) =>
-                  console. log(`${name}: ${value}`), 
-                );
-            });
-        })();
-    </script>
+    <!-- Форма -->
+    <script src="./js/modal.js"></script>
     <!-- подключение мадалки -->
 </body>
 </html>
