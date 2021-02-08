@@ -419,7 +419,9 @@ a {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
 
+.form-label div {
   margin-top: 4px;
   margin-bottom: 10px;
 }
@@ -481,6 +483,10 @@ a {
   letter-spacing: 0.03em;
 
   margin-left: 4px;
+}
+
+.checkbox {
+  opacity: 0;
 }
 
 .icon-checkbox {
@@ -945,7 +951,8 @@ footer .container {
 }
 
 .box-right-mailing {
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: 0;
   width: 570px;
 }
 
@@ -981,7 +988,6 @@ footer .container {
 }
 
 .mailing button {
-  position: relative;
   padding-top: 10px;
   padding-left: 29px;
   padding-right: 62px;
